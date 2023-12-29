@@ -1,12 +1,20 @@
 function [h,xdata,ydata] = draw_circle(varargin)
 %
-% DRAW_CIRCLE
-% Options:
-%  center = 0
-%  radius = 1
-%  N = 20
-%  initialAngle = 0
-%  finalAngle = 2pi
+% [h,xdata,ydata] = DRAW_CIRCLE()
+%  Draws a circle with the following default options
+%   center = 0
+%   radius = 1
+%   N = 20 % Number of points
+%   initialAngle = 0
+%   finalAngle = 2*pi
+%  Returns the handle h to the line and the (xdata,ydata) of each point in
+%  the circle
+%
+% DRAW_CIRCLE('option_name',option_value)
+%  The function accepts any number of pairs of option_name and option_value 
+%  to change the default behavior
+% 
+% Author: Pedro Casau
 %
     tti = 0;
     ttf = 2*pi;
